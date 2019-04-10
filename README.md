@@ -148,3 +148,6 @@ This is has been a whirlwind tour of Ruby's collection data types, Hash and
 Array. Individually each are data structures that can hold list- and
 dictionary-like data. Amazingly, they can _hold each other_ and that means we
 can make very complex data structures from them.
+
+In the subsequent lessons we're going to dive deep into creating `Array`s and 
+`Hash`es and working with them.
