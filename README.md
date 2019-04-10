@@ -15,7 +15,7 @@
 
 Thus far, we've been storing simple data in our variables, constant scalar
 values: `String`s, `Integer`s, and `Float`s, etc. Learning to store and to work
-with the data held in these data structures will be the focus of this module.
+with the data held in data structures will be the focus of this module.
 
 ## Compare Collection Data Types to Scalar Data Types
 
