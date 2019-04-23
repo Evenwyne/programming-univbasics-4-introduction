@@ -25,17 +25,17 @@ about the collection as an _abstraction_.
 
 This is very natural in conversation: we know "The Beatles" refer to four guys
 from Liverpool. The "Gryffindors" collection of J.K. Rowling's "Wizarding World"
-refer to a group of legal minors with a predilection for peril. How can we
-represent collections in Ruby? By using `Arrays` and `Hashes` and "nesting"
-them within one another.
+refer to a group of legal minors with a predilection for peril.
+
+We represent collections in Ruby by using `Arrays` and `Hashes`.
 
 ## Define `Array`
 
-An `Array` is a collection data type that holds multiple pieces of data under a
-collected bare-word name whose members can be read and updated by using an
-_index_.
+An `Array` is a collection that holds multiple pieces of data under a
+single, communal name ("Gryffindors", "Countries"). The individuals that
+make up this communale name are identified by an_index_.
 
-Arrays are like tables that have an identifier that is an `Integer` that starts
+Arrays are like tables that have an identifier, or _index_, that is an `Integer` that starts
 at 0 and goes on up from there. You can think of them as being like a table.
 
 **The Beatles**
@@ -53,10 +53,11 @@ IRB!):
 ```ruby
 the_beatles = [ "John Lennon", "Paul McCartney", "Ringo Starr", "George Harrison"]
 ```
+
 You provide a name, an assignment operator and then a list of data, separated
 by commas, that should go in the `Array`, wrapped in `[]`. Each bit of
-information is often a scalar value, but it could also be another collection,
-more on that later.
+information is often a scalar value, but it could also be another collection
+(more on that later).
 
 ## Define Array Element / Member
 
@@ -66,13 +67,13 @@ people also call the _members_. In a collection of `the_beatles`, the `String`
 
 ## Define Array Index
 
-Arrays provide a pointer to each _member_ called an index. The index for the
-_element_ `"Ringo Starr"` is `2`.
+Arrays provide a number that identifies each _element_ called an _index_. The index for the
+_element_ `"Ringo Starr"` above is `2`.
 
 ## Define `Hash`
 
 An `Hash` is a collection data type that holds multiple pieces of data under a
-collected bare-word name whose members can be read and updated by using a
+collected name whose members can be read and updated by using a
 _key_. You can think of them as being like a table that looks like this:
 
 
@@ -114,10 +115,20 @@ typically a `Symbol` or a `String`. This identifier is called a _key_
 The value that's returned from asking a `Hash` what a given _key_ points to is
 known as the key's _value_.
 
+Now that you know about Arrays (grocery lists, band members, todo lists)
+and Hashes (abbreviation to full name lookup, stock symbol to trading value
+lookup) you might be a bit unimpressed. "Surely the world's data needs
+are more complex than simple lists and lookup tables," you might exclaim.
+
+You'd be right, but the amazing thing about collections is that they can
+contain _other_ collections as part of a process called _nesting_. Can you
+imagine an Array of Hashes? Or a Hash of Arrays of Hashes of Arrays? You can
+cover a staggerlingly huge model of data with nesting.
+
 ## Demonstrate Nesting of Collection Data Structures
 
 We want to provide a really complex example of Array and Hash working together.
-Most programming texts don't share this early and it makes "nesting" sound
+Most programming texts don't share this concept this early and it makes "nesting" sound
 scary and complex. We're going to give you a short demonstration here so that
 you can see why you want to have these complex data structures. The details on
 how to build them, etc. will come in later lessons.
@@ -141,6 +152,15 @@ english_music_by_city = {
 }
 ```
 The _abstraction_ `english_bands_by_city` hides the complexity in that piece of data.
+
+As a result:
+
+```ruby
+english_music_by_city[:manchester][0][:band_name] #=> "The Smiths"
+english_music_by_city[:manchester][0][:member_names] #=> ["Morrissey", "Johnny", "Andy", "Mike"]
+
+puts "There were #{english_music_by_city[:manchester][0][:member_names].length} members in #{english_music_by_city[:manchester][0][:band_name]}"
+#=> "There were 4 members in The Smiths"
 
 ## Conclusion
 
