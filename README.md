@@ -56,10 +56,10 @@ name ("Gryffindors", "Countries"). In daily life, we call them "lists."
 
 |Index|Data|
 |-----|----|
-| 0   | "John Lennon"     |
-| 1   | "Paul McCartney"  |
-| 2   | "Ringo Starr"     |
-| 3   | "George Harrison" |
+| `0`   | `"John Lennon"`     |
+| `1`   | `"Paul McCartney"`  |
+| `2`   | `"Ringo Starr"`     |
+| `3`   | `"George Harrison"` |
 
 or
 
@@ -67,10 +67,10 @@ or
 
 |Index|Data|
 |-----|----|
-| 0   | "Parsnips"           |
-| 1   | "English Toffee"     |
-| 2   | "Milk"               |
-| 3   | "Sprouted Rye Bread" |
+| `0`   | "Parsnips"`           |
+| `1`   | "English Toffee"`     |
+| `2`   | "Milk"`               |
+| `3`   | "Sprouted Rye Bread"` |
 
 The individuals _elements_ that make up this collection (or list) name are
 identified by an _index_.
@@ -118,10 +118,10 @@ table this might look like:
 
 |Index|Data|Instrument Lookup _key_|
 |-----|----|----|
-| ~0~   | "John Lennon"     | `:rhythm_guitar`|
-| ~1~   | "Paul McCartney"  | `:bass`|
-| ~2~   | "Ringo Starr"     | `:drums`|
-| ~3~   | "George Harrison" | `:lead_guitar`|
+| ~`0`~   | `"John Lennon"`     | `:rhythm_guitar`|
+| ~`1`~   | `"Paul McCartney"`  | `:bass`|
+| ~`2`~   | `"Ringo Starr"`     | `:drums`|
+| ~`3`~   | `"George Harrison"` | `:lead_guitar`|
 
 A `Hash` is a collection data type that holds multiple pieces of data under a
 collected name whose members can be read and updated by using a _key_ instead
@@ -132,10 +132,10 @@ We can think of `Hash`es like a table that looks like this:
 
 |Key|Value|
 |-----|----|
-| :liverpool  | "The Beatles"     |
-| :manchester | "The Smiths"  |
-| :coventry   | "Delia Derbyshire and the BBC Radiophonic Band"  |
-| :london     | "Ziggy Stardust and the Spiders from Mars"     |
+| `:liverpool`  | `"The Beatles"`     |
+| `:manchester` | `"The Smiths"`  |
+| `:coventry`   | `"Delia Derbyshire and the BBC Radiophonic Band"`  |
+| `:london`     | `"Ziggy Stardust and the Spiders from Mars"`     |
 
 To define this "table" in Ruby we would type (and you should test out in
 IRB!):
