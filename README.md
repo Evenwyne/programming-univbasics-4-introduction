@@ -27,13 +27,13 @@ that contains multiple small elements that we identify by "the third item on my
 grocery list, or the last item on my grocery list." Ordered lists in Ruby are
 called "Arrays."
 
-Another collection we know about are dictionaries: we use one thing to "look
-up" a value. We "look up" the word "computer" in a real dictionary and we are
-"pointed to" a long `String` that tells us what the word means. Lookup tables,
-or dictionaries, in Ruby, are called "Hashes."
+Another collection type we know about from daily life are dictionaries: we use
+one thing to "look up" a value. We "look up" the word "computer" in a real
+dictionary and we are "pointed to" a long `String` that tells us what the word
+means. Lookup tables, or dictionaries, in Ruby, are called "Hashes."
 
 Learning to store and to work with the data held in data structures will be the
-focus of this module. In the remainder of our lesson we'll give you a broad,
+focus of this module. In the remainder of our lesson, we'll give you a broad,
 conceptual introduction to collection data types and we'll dig into the details
 in the following lessons.
 
@@ -49,7 +49,7 @@ types.
 ## Define `Array`
 
 An `Array` is a collection that holds multiple pieces of data under a single
-name ("Gryffindors", "Countries"). In daily life we call them as "lists."
+name ("Gryffindors", "Countries"). In daily life, we call them as "lists."
 
 **The Beatles**
 
@@ -93,8 +93,8 @@ information is often a scalar value, but it could also be another collection
 ## Define `Array` Element / Member
 
 The individual pieces of data inside an `Array` are called _elements_. Some
-people also call the _members_. In a collection of `the_beatles`, the `String`
-`"George Harrison"` is an _element_.
+people also call the _elements_ the _members_. In a collection of
+`the_beatles`, the `String` `"George Harrison"` is an _element_.
 
 ## Define `Array` Index
 
@@ -122,7 +122,7 @@ table this might look like:
 | ~2~   | "Ringo Starr"     | `:drums`|
 | ~3~   | "George Harrison" | `:lead_guitar`|
 
-An `Hash` is a collection data type that holds multiple pieces of data under a
+A `Hash` is a collection data type that holds multiple pieces of data under a
 collected name whose members can be read and updated by using a _key_ instead
 of an _index_. You can think of `Hash`es like a table that looks like this:
 
@@ -148,14 +148,14 @@ english_bands_by_city = {
 
 You provide a name (`english_music_by_city`), an assignment operator (`=`) and
 then a list of pairs, separated by commas, that should go in the `Hash`,
-wrapped in `{}`. Each pair should have name (typically a `Symbol`), a "rocket"
-symbol (`=>`), and a value. A value is often a scalar value, but it could be
-another collection, more on that later.
+wrapped in `{}`. Each pair should have a name (typically a `Symbol`), a
+"rocket" symbol (`=>`), and a value. A value is often a scalar value, but it
+could be another collection, more on that later.
 
 ## Define `Hash` Key
 
-`Hash`es are like tables that have an identifier that is a piece of data,
-typically a `Symbol` or a `String`. This identifier is called a _key_.
+`Hash`es are like tables that have an name that is a piece of data, typically a
+`Symbol` or a `String`. This identifier is called a _key_.
 
 > **REMINDER** `Symbols` are like `Strings` except that they start with `:`
 > and have some other interesting features from Ruby's perspective. Most
@@ -172,13 +172,14 @@ _key_ in another lesson.
 ## Demonstrate Nesting of Collection Data Structures
 
 Now that you know about `Array`s (grocery lists, band members, todo lists) and
-`Hash`es (abbreviation to full name lookup, stock symbol to trading value lookup)
-you might be a bit unimpressed. "Surely the world's data needs are more complex
-than simple lists and lookup tables," you might exclaim.
+`Hash`es (abbreviation to full name lookup, a stock symbol to trading value
+lookup, instrument to band member name lookup) you might be a bit unimpressed.
+"Surely the world's data needs are more complex than simple lists and lookup
+tables," you might exclaim.
 
 You'd be right, but the amazing thing about collections is that they can
 contain _other_ collections as part of a process called _nesting_. Can you
-imagine an `Array` of `Hashe`s? Or a `Hash` of `Arrays` of `Hash`es of
+imagine an `Array` of `Hash`es? Or a `Hash` of `Arrays` of `Hash`es of
 `Array`s? You can cover a staggeringly huge model of data with nesting of these
 two data types.
 
@@ -186,7 +187,7 @@ We want to provide a really complex example of `Array` and `Hash` working togeth
 Most programming texts don't share this concept this early and it makes "nesting" sound
 scary and complex. We're going to give you a short demonstration here so that
 you can see why you want to have these complex data structures. The details on
-how to build them, etc. will come in later lessons.
+how to build them etc. will come in later lessons.
 
 The _elements_ in an _Array_ and the _values_ in a _Hash_ can be `Hash`es or
 `Array`s _themselves_. This leads to "nesting" such that you could build a
@@ -220,8 +221,8 @@ puts "There were #{english_music_by_city[:manchester][0][:member_names].length} 
 
 ## Conclusion
 
-This is has been a broad tour of Ruby's collection data types, `Hash` and Array.
-Individually each are data structures that can hold list- and dictionary-like
-data. Amazingly, they can even _hold each other_ &mdash; and that means we can
-make very complex data structures from them! We'll practice with these types in
-the following lessons!
+This is has been a broad tour of Ruby's collection data types, `Hash` and
+Array.  Individually they are data structures that can hold list- and
+dictionary-like data. Amazingly, they can even _hold each other_ &mdash; and
+that means we can make very complex data structures from them! We'll practice
+with these types in the following lessons!
