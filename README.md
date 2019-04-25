@@ -18,7 +18,8 @@ values like:
 
   * `String`s
   * `Integer`s
-  * `Float`s, etc.
+  * `Float`s
+  * etc.
 
 But sometimes we want to refer to a _collection_ of values by a common name.
 This is very natural in conversation: we know "The Beatles" refer to four guys
@@ -49,7 +50,7 @@ types.
 ## Define `Array`
 
 An `Array` is a collection that holds multiple pieces of data under a single
-name ("Gryffindors", "Countries"). In daily life, we call them as "lists."
+name ("Gryffindors", "Countries"). In daily life, we call them "lists."
 
 **The Beatles**
 
@@ -85,7 +86,7 @@ IRB!):
 the_beatles = [ "John Lennon", "Paul McCartney", "Ringo Starr", "George Harrison"]
 ```
 
-You provide a name, an assignment operator and then a list of data, separated
+You provide a name (`the_beatles`), an assignment operator (`=`)and then a list of data, separated
 by commas, that should go in the `Array`, wrapped in `[]`. Each bit of
 information is often a scalar value, but it could also be another collection
 (more on that later).
@@ -108,10 +109,10 @@ _index_ in another lesson.
 
 Another way of thinking about `Array`s is that they are like tables that have
 an identifier that is an `Integer`. If we let the identifier be a `String` or a
-`Symbol`, instead of an `Integer`, then we'd basically be describing a `Hash`.
+`Symbol` _instead_ of an `Integer`, then we'd basically be describing a `Hash`.
 
 What if we wanted to take our list of the Beatles and describe each member not
-by some `Integer` position, but by the instrument they played in the band? As a
+by some `Integer` _index_, but rather by the instrument they played in the band? As a
 table this might look like:
 
 
@@ -124,14 +125,16 @@ table this might look like:
 
 A `Hash` is a collection data type that holds multiple pieces of data under a
 collected name whose members can be read and updated by using a _key_ instead
-of an _index_. You can think of `Hash`es like a table that looks like this:
+of an _index_. In daily conversation we use _keys_ to retrieve _values_
+all the time: "Who was the guy who played **drums** in **The Beatles**?"
 
+We can think of `Hash`es like a table that looks like this:
 
 |Key|Value|
 |-----|----|
 | :liverpool  | "The Beatles"     |
 | :manchester | "The Smiths"  |
-| :coventry   | "Delia Derbyshire"  |
+| :coventry   | "Delia Derbyshire and the BBC Radiophonic Band"  |
 | :london     | "Ziggy Stardust and the Spiders from Mars"     |
 
 To define this "table" in Ruby we would type (and you should test out in
@@ -209,7 +212,7 @@ english_music_by_city = {
 ```
 The _abstraction_ `english_bands_by_city` hides the complexity in that piece of data.
 
-As a peek ahead, we can use the lookup operators to "dig into" this collection
+As a peek ahead, we can use the lookup operator (`[]`) to "dig into" this nested collection
 and get interesting information out:
 
 ```ruby
@@ -218,6 +221,7 @@ english_music_by_city[:manchester][0][:member_names] #=> ["Morrissey", "Johnny",
 
 puts "There were #{english_music_by_city[:manchester][0][:member_names].length} members in #{english_music_by_city[:manchester][0][:band_name]}"
 #=> "There were 4 members in The Smiths"
+```
 
 ## Conclusion
 
