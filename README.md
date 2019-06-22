@@ -157,7 +157,7 @@ could be another collection, more on that later.
 
 ## Define `Hash` Key
 
-`Hash`es are like tables that have an name that is a piece of data, typically a
+`Hash`es are like tables that have a name that is a piece of data, typically a
 `Symbol` or a `String`. This identifier is called a _key_.
 
 > **REMINDER** `Symbols` are like `Strings` except that they start with `:`
