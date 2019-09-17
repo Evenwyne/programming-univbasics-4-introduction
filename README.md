@@ -29,13 +29,17 @@ grocery list, or the last item on my grocery list." Ordered lists in Ruby are
 called "Arrays."
 
 <p align="center">
- <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_125_Scroll%20w-List.png"/>
+ <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_126_Dictionary.png"/>
 </p>
 
 Another collection type we know about from daily life are dictionaries: we use
 one thing to "look up" a value. We "look up" the word "computer" in a real
 dictionary and we are "pointed to" a long `String` that tells us what the word
 means. Lookup tables, or dictionaries, in Ruby, are called "Hashes."
+
+<p align="center">
+ <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_126_Dictionary.png"/>
+</p>
 
 Learning to store and to work with the data held in data structures will be the
 focus of this module. In the remainder of our lesson, we'll give you a broad,
