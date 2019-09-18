@@ -29,7 +29,7 @@ grocery list, or the last item on my grocery list." Ordered lists in Ruby are
 called "Arrays."
 
 <p align="center">
- <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_126_Dictionary.png"/>
+ <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_125_Scroll w-List.png" alt="Scroll"/>
 </p>
 
 Another collection type we know about from daily life are dictionaries: we use
@@ -38,7 +38,7 @@ dictionary and we are "pointed to" a long `String` that tells us what the word
 means. Lookup tables, or dictionaries, in Ruby, are called "Hashes."
 
 <p align="center">
- <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_126_Dictionary.png"/>
+ <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_126_Dictionary.png" alt="Dictionary"/>
 </p>
 
 Learning to store and to work with the data held in data structures will be the
@@ -83,6 +83,10 @@ or
 The individuals _elements_ that make up this collection (or list) name are
 identified by an _index_.
 
+<p align="center">
+  <img width="500" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_127_Beatles.png" alt="Beatles"/>
+</p>
+
 It might seem strange that we start our list at `0` instead of `1`. Programmers
 like `0` and most programming languages start their index at `0`. Otherwise,
 it's pretty much a list like you've been making most of your life.
@@ -119,17 +123,16 @@ Another way of thinking about `Array`s is that they are like tables that have
 an identifier that is an `Integer`. If we let the identifier be a `String` or a
 `Symbol` _instead_ of an `Integer`, then we'd basically be describing a `Hash`.
 
+
+<p align="center">
+ <img width="300" src="https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_130_HashDefinition.png" alt="Hash Definition"/>
+</p>
+
 What if we wanted to take our list of the Beatles and describe each member not
 by some `Integer` _index_, but rather by the instrument they played in the band? As a
 table this might look like:
 
-
-|Index|Data|Instrument Lookup _key_|
-|-----|----|----|
-| ~`0`~   | `"John Lennon"`     | `:rhythm_guitar`|
-| ~`1`~   | `"Paul McCartney"`  | `:bass`|
-| ~`2`~   | `"Ringo Starr"`     | `:drums`|
-| ~`3`~   | `"George Harrison"` | `:lead_guitar`|
+![Array to Hash conversion graphic](https://curriculum-content.s3.amazonaws.com/programming-univbasics-4/introduction/Image_129_Array2HashConversion.png)
 
 A `Hash` is a collection data type that holds multiple pieces of data under a
 collected name whose members can be read and updated by using a _key_ instead
