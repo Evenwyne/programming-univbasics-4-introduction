@@ -42,9 +42,17 @@ means. Lookup tables, or dictionaries, in Ruby, are called "Hashes."
 </p>
 
 Learning to store and to work with the data held in data structures will be the
-focus of this module. In the remainder of our lesson, we'll give you a broad,
-conceptual introduction to collection data types and we'll dig into the details
-in the following lessons.
+focus of this module. A video on the basics of arrays and hashes is included below.
+In the remainder of the lesson, we'll give you a broad, conceptual introduction to
+collection data types.
+
+## Video: Arrays and Hashes
+
+This video provides an overview of everything we will learn and practice in
+next few lessons. We will revisit each of the discussed concepts in detail, but watching
+this video now will give you a good high-level view of how arrays and hashes work.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9m4SJOqxoYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Compare Collection Data Types to Scalar Data Types
 
