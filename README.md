@@ -54,6 +54,8 @@ this video now will give you a good high-level view of how arrays and hashes wor
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9m4SJOqxoYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Arrays and Hashes](https://youtu.be/9m4SJOqxoYI)
+
 ## Compare Collection Data Types to Scalar Data Types
 
 `String`s, `Integer`s, and `Float`s are scalar data types, they can be put on a
